@@ -9,7 +9,6 @@ import { useState } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
-  console.log("🚀 ~ file: Nav.jsx:12 ~ Nav ~ activeNav:", activeNav)
   return (
     <nav>
       <a href="#" onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
