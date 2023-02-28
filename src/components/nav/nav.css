@@ -31,3 +31,107 @@ nav a.active {
     background: var(--color-bg);
     color: var(--color-white);
 }
+
+
+
+nav div h3 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.236);
+    border-radius: 30%;
+    font-size: 0.8rem;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    nav div h3 {
+        display: block;
+    }
+    
+    nav div:nth-child(-n+2) h3{
+        transform: translate(4px, -40px);
+    }
+    nav div:nth-child(3) h3 {
+        transform: translate(-10px, -40px);
+    }
+    nav div:nth-child(4) h3 {
+        transform: translate(-4px, -40px);
+    }
+    nav div:nth-child(5) h3 {
+        transform: translate(-2px, -40px);
+    }
+   
+
+    
+    nav div:nth-child(-n+2):hover h3 {
+        opacity: 1;
+        transform: translate(4px, -83px);
+    }
+    nav div:nth-child(3):hover h3 {
+        opacity: 1;
+        transform: translate(-10px, -83px);
+    }
+    nav div:nth-child(4):hover h3 {
+        opacity: 1;
+        transform: translate(-4px, -83px);
+    }
+    nav div:nth-child(5):hover h3 {
+        opacity: 1;
+        transform: translate(-2px, -83px);
+    }
+
+
+
+}
+
+
+
+
+/* 
+nav div div::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 10px solid rgba(0, 0, 0, 0.236);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+nav div:nth-child(-n+2) div::after {
+    transform: translate(13px, -18.5px);
+}
+nav div:nth-child(3) div::after {
+    transform: translate(13px, -18.5px);
+}
+nav div:nth-child(4) div::after {
+    transform: translate(12px, -18.5px);
+}
+nav div:nth-child(5) div::after {
+    transform: translate(13px, -18.5px);
+}
+
+
+nav div:nth-child(-n+2):hover div::after {
+    opacity: 1;
+    transform: translate(13px, -67.5px);
+}
+nav div:nth-child(3):hover div::after {
+    opacity: 1;
+    transform: translate(13px, -67.5px);
+}
+nav div:nth-child(4):hover div::after {
+    opacity: 1;
+    transform: translate(12px, -67.5px);
+}
+nav div:nth-child(5):hover div::after {
+    opacity: 1;
+    transform: translate(13px, -67.5px);
+} */
+
