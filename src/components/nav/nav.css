@@ -12,6 +12,8 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
 }
 
 nav a {
@@ -32,7 +34,7 @@ nav a.active {
     color: var(--color-white);
 }
 
-
+/* texto flotante */
 
 nav div h3 {
     color: var(--color-light);
@@ -44,7 +46,6 @@ nav div h3 {
     opacity: 0;
     display: none;
 }
-
 
 
 
@@ -84,8 +85,6 @@ nav div h3 {
         opacity: 1;
         transform: translate(-2px, -83px);
     }
-
-
 
 }
 

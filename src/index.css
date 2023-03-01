@@ -1,3 +1,6 @@
+
+@import url('./components/nav/nav.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,7 @@
 
 :root {
   /* --color-bg: #1f1f38; */
-  --color-bg: #333357ee;
+  --color-bg: #20203eee;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -119,6 +122,10 @@ img {
   section {
     margin-top: 6rem;
   }
+  body nav {
+    opacity: 1;
+  }
+
 }
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
@@ -128,5 +135,11 @@ img {
   }
   section > h2{
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body:hover nav {
+    opacity: 1;
   }
 }
