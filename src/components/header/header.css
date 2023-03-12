@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 5rem;
     overflow: hidden;
 }
 
@@ -8,6 +8,7 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+    
 }
 
 /* ============ CTA ==========*/
@@ -45,10 +46,10 @@ header {
     left: calc(50% - 11rem);
     /* left: 50%;
     transform: translateX(50% - 11rem); */
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
 }
 
 /* ============ SCROLL DOWN ==========*/
