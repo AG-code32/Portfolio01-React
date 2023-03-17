@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 5rem;
+    padding-top: 4rem;
     overflow: hidden;
 }
 
@@ -11,9 +11,41 @@ header {
     
 }
 
+.header__container > h5 {
+  font-size: 1rem;
+}
+
+.header__container-name {
+  font-size: 7.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+
+  color: transparent;
+  background: linear-gradient(90deg, rgb(53, 162, 68) 0%, rgb(20, 164, 102) 10%, #4db5ff 20%, #4db5ff 30%, rgb(91, 9, 158) 40%, rgb(63, 10, 148) 50%, #4db5ff 60%, #4db5ff 70%, rgb(22, 110, 132) 80%, rgb(44, 44, 148) 90%, rgb(8, 54, 147) 100%);
+  /* background-clip: text; */
+  background-clip: text;
+  animation: color 20s linear infinite; 
+  background-size: 1000%;  
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+}
+
+@keyframes color {
+  0% { 
+    background-position: 0% 100%;
+  }
+  50% { 
+    background-position: 100% 0%; 
+  }
+  100% { 
+    background-position: 0% 100%; 
+  }
+}
+
 /* ============ CTA ==========*/
 .cta {
-    margin-top: 2.5rem;
+    margin-top: 7.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -27,7 +59,12 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 3rem;
+    bottom: 1.1rem;
+}
+
+.header__socials > a {
+  font-size: 1.3rem;
+  /* width: 2rem; */
 }
 
 .header__socials::after {
@@ -56,10 +93,10 @@ header {
 .scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 5rem;
+    bottom: 3rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */

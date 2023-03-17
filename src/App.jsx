@@ -9,21 +9,23 @@ import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {   BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from './pages/HomePage'
+import ResumePage from './pages/ResumePage'
+
+
 function App() {
   return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experiences />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
-      <Footer />
-
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomePage />}/>
+          <Route path='/resume' element={<ResumePage />}/>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App

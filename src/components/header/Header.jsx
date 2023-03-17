@@ -1,37 +1,27 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/me1.png'
+// import ME from '../../assets/me1.png'
 import HeaderSocials from './HeaderSocials'
-import Typed from 'typed.js'
-import { useEffect, useRef } from 'react'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+
 
 const Header = () => {
 
-const el = useRef(null);
-useEffect(() => {
-  const typed = new Typed (el.current, {
-    // strings: ["Think", "Feel", "Behave", "Learn", "Do"],
-    strings: ["Front End", "Developer", "Engineer"],
-    // startDelay: 100,
-    typeSpeed: 100,
-    // backDelay: 150,
-    backSpeed: 100,
-    // smartBackspace: true,
-    showCursor: false,
-    loop: true,
-  }
-
-  )
-})
-
+  const [text] = useTypewriter ({
+    words: ['Developer', 'Front-End', 'Back-End', 'Full Stack'],
+    loop: 0,
+    delaySpeed: 1000,
+  });
 
   return (
   <header id='home'>
     <div className="container header__container">
       <h5>Hello I'm</h5>
-      <h1>Gerson Yance</h1>
-      <h5 className="text-light">Software <span ref={el}></span></h5>
+      <p className='header__container-name'>Gerson</p>
+      <p className='header__container-name'>Yance</p>
+      <h5 className="text-light">Software <span>{text}</span><Cursor/></h5>
+      
       <HeaderSocials />
 
       {/* <div className="me"> */}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/me2.png'
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -8,14 +8,26 @@ import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
     <section id='about'>
+      
       <h5>Get to know</h5>
       <h2>About Me</h2>
+
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="profile me" />
+        
+        <div className='about__container-me'>
+          <div className="about__me">
+            <div className="about__me-image">
+              <img src={ME} alt="profile me" />
+            </div>
           </div>
+
+          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+
         </div>
+
+
+        
+
         <div className="about__content">
           <div className="about__cards">
 
@@ -43,7 +55,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque molestias consequatur fugit molestiae nobis quaerat. Ducimus esse cumque, facere aut dolor adipisci at perspiciatis delectus necessitatibus voluptatum tempora!
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          {/* <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
         </div>
       </div>
     </section>
