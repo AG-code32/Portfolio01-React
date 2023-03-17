@@ -1,5 +1,4 @@
 import React from 'react'
-import CV from '../../assets/GersonYance-CV-dev.pdf'
 
 const CTA = () => {
   return (
