@@ -1,3 +1,7 @@
+#services {
+    padding-top: 2rem;
+  }
+  
 .services__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,7 +10,7 @@
 
 .service {
     background: var(--color-bg-variant);
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 2rem 2rem 2rem 2rem;
     border: 1px solid var(--color-primary);
     height: fit-content;
     transition: var(--transition);
@@ -21,7 +25,7 @@
 .service__head {
     background: var(--color-primary);
     padding: 2rem;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 2rem 2rem 2rem 2rem;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -69,6 +73,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    #services {
+        height: auto;
+      }
     .services__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;

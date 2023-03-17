@@ -9,7 +9,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 const Header = () => {
 
   const [text] = useTypewriter ({
-    words: ['Developer', 'Front-End', 'Back-End', 'Full Stack'],
+    words: ['Software Developer','Software Engineer', 'Front-End Developer', 'Back-End Developer', 'Full Stack Developer'],
     loop: 0,
     delaySpeed: 1000,
   });
@@ -20,7 +20,7 @@ const Header = () => {
       <h5>Hello I'm</h5>
       <p className='header__container-name'>Gerson</p>
       <p className='header__container-name'>Yance</p>
-      <h5 className="text-light">Software <span>{text}</span><Cursor/></h5>
+      <h5 className="text-light"> <span>{text}</span><Cursor/></h5>
       
       <HeaderSocials />
 

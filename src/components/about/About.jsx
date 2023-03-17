@@ -21,14 +21,21 @@ const About = () => {
             </div>
           </div>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          {/* <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
 
         </div>
 
 
-        
-
         <div className="about__content">
+
+          <p>
+          Software Developer, apasionado por el Front-End y el desarrollo de paginas web, creando sitios web únicos que brindan una experiencia de usuario dinámica, intuitiva y satisfactoria.<br /><br />
+          {/* Puedes ver algunos de mis trabajos en la sección de proyectos.<br /><br /> */}
+          {/* Persona organizada, solucionadora de problemas, responsable y comprometida con mi trabajo.<br /><br /> */}
+          Estoy constantemente aprendiendo nuevas tecnologías y herramientas para mejorar mis habilidades.
+          {/* Interesado en todo el espectro frontend y trabajando en proyectos ambiciosos con personas positivas. */}
+          </p>
+
           <div className="about__cards">
 
             <article className="about__card">
@@ -51,11 +58,9 @@ const About = () => {
           
           </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque molestias consequatur fugit molestiae nobis quaerat. Ducimus esse cumque, facere aut dolor adipisci at perspiciatis delectus necessitatibus voluptatum tempora!
-          </p>
 
-          {/* <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
+          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          
         </div>
       </div>
     </section>

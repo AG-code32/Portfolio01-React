@@ -32,7 +32,8 @@ const Contact = () => {
             <h4>Email</h4>
             <h5>g.yance32@gmail.com</h5>
             <a href=
-              'mailto:g.yance32@gmail.com?subject=Disponibilidad%20de%20Postulante&body=Estimado%20postulante,%20quisieramos%20contar%20con%20usted%20para%20la%20siguiente%20etapa%20de%20la%20postulación%20mediante%20una%20entrevista,%20por%20favor,%20ponte%20en%20contacto%20con%20este%20numero,%20para%20coordinar%20la%20fecha%20y%20hora: "  ".'
+              // 'mailto:g.yance32@gmail.com?subject=Disponibilidad%20de%20Postulante&body=Estimado%20postulante,%20quisieramos%20contar%20con%20usted%20para%20la%20siguiente%20etapa%20de%20la%20postulación%20mediante%20una%20entrevista,%20por%20favor,%20ponte%20en%20contacto%20con%20este%20numero,%20para%20coordinar%20la%20fecha%20y%20hora: "  ".'
+              'mailto:g.yance32@gmail.com'
               target='_blank' rel='noreferrer'>
               Send a message
             </a>

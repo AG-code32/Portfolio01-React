@@ -1,11 +1,19 @@
 import React from 'react'
+import Curriculum from '../../assets/GersonYance-CV-dev.pdf'
+import useMediaQuery from './useMediaQuery'
+
 
 const CTA = () => {
+
+  const matches = useMediaQuery('(max-width: 600px)')
+
   return (
     <div className="cta">
-        <a href="/resume" className='btn'>Download CV</a>
+        {matches ? 
+        <a href={Curriculum} download className='btn'>Download CV</a> : 
+        <a href='/resume' className='btn'>Download CV</a>}
+
         <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-        {/* <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
     </div>
   )
 }

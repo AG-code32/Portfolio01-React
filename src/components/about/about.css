@@ -1,22 +1,28 @@
+#about {
+  height: 100vh;
+}
 #about > h5 {
   padding-top: 2rem;
 }
 
 .about__container {
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 35% 60%;
+  gap: 5%;
 }
 
 .about__container-me {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
-  gap: 3rem;
+  height: 25rem;
+  /* gap: 3rem; */
 }
 
 .about__me {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -44,7 +50,12 @@
 .about__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* height: 20rem; */
+  gap: 3rem;
+}
+.about__content > p {
+  font-size: .9rem;
 }
 
 .about__cards {
@@ -89,34 +100,89 @@
 }
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1440px) {
+
+  .about__me {
+    width: 90%;
+  }
+  .about__content {
+    gap: 2rem;
+  }
+  .about__card {
+  padding: 1.5rem;
+  }
+}
+
+
+  /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {
+  #about {
+    height: auto;
+    /* margin: 0; */
+  }
   .about__container {
+    /* height: auto; */
     grid-template-columns: 1fr;
     gap: 0;
   }
+  .about__container-me {
+    height: auto;
+  }
   .about__me {
-    width: 50%;
-    margin: 2rem auto 4rem;
+    width: 35%;
+    margin: 0rem auto 0rem;
   }
   .about__content {
-    margin: 1rem 0 1.5rem;
+    /* margin: 1rem 0 1.5rem; */
+    /* justify-content: space-between; */
+    padding: 3rem 5rem 5rem;
+    align-items: center;
+    gap: 2rem;
   }
+  .about__cards {
+    width: 100%;
+    padding: 3rem 0;
+  }
+  .about__card {
+    padding: 2rem;
+    }
 }
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
+  #about {
+    height: auto;
+    margin: 0;
+  }
+  .about__container-me {
+    /* gap: 1rem; */
+    /* padding-bottom: 2rem; */
+    height: auto;
+  }
   .about__me {
     width: 65%;
-    margin: 0 auto 3rem;
+    margin: 2rem auto 0rem;
+  }
+  .about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(0deg);
+    /* transition: var(--transition); */
   }
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+  .about__card {
+    padding: 2rem 1rem;
+    }
   .about__content {
-    text-align: center;
+    padding: 1rem 0rem 2rem;
+    /* text-align: center; */
   }
   .about__content p {
-    margin: 1.5rem 0;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
   }
 }
