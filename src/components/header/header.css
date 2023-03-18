@@ -118,7 +118,7 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
   .header__container-name {
     font-size: 5.2rem;
@@ -133,5 +133,62 @@ header {
     align-items: center;
     gap: 2.5rem;
     margin-top: 5.5rem;
+  }
+}
+/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  header {
+    height: 100vh;
+    padding-top: 1rem;
+  }
+  .header__container-name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: .9;
+  }
+  .header__container .text-light {
+    padding: .5rem 0 1.5rem;
+  }
+  .cta {
+    gap: 2.5rem;
+    margin-top: 0rem;
+  }
+  .scroll__down {
+    /* position: absolute; */
+    right: -1rem;
+    bottom: 6rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: .8rem;
+  }
+
+  .header__socials, .scroll__down {
+    display: none;
+  }
+
+}
+
+
+
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (min-height: 800px) {
+  header {
+    height: 100vh;
+    padding-top: 9rem;
+  }
+  .header__container-name {
+    /* font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2; */
+  }
+  .header__socials, .scroll__down {
+    /* display: none; */
+  }
+  .cta {
+    /* flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5.5rem; */
   }
 }

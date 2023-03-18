@@ -4,9 +4,12 @@ import CTA from './CTA'
 // import ME from '../../assets/me1.png'
 import HeaderSocials from './HeaderSocials'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import useMediaQuery from './useMediaQuery'
 
 
 const Header = () => {
+  
+  const matches = useMediaQuery('(max-width: 800px) and (orientation: landscape)')
 
   const [text] = useTypewriter ({
     words: ['Software Developer','Software Engineer', 'Front-End Developer', 'Back-End Developer', 'Full Stack Developer'],
@@ -18,8 +21,17 @@ const Header = () => {
   <header id='home'>
     <div className="container header__container">
       <h5>Hello I'm</h5>
-      <p className='header__container-name'>Gerson</p>
-      <p className='header__container-name'>Yance</p>
+      
+      {matches ? 
+        <p className='header__container-name'>Gerson Yance</p> : 
+        <><p className='header__container-name'>Gerson</p>
+        <p className='header__container-name'>Yance</p></>
+        
+        }
+      
+      
+      {/* <p className='header__container-name'>Gerson</p>
+      <p className='header__container-name'>Yance</p> */}
       <h5 className="text-light"> <span>{text}</span><Cursor/></h5>
       
       <HeaderSocials />
