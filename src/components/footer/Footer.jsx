@@ -3,6 +3,8 @@ import './footer.css'
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import { BsWhatsapp } from "react-icons/bs";
+
 
 const Footer = () => {
   return (
@@ -21,9 +23,10 @@ const Footer = () => {
       
       <div className="footer__socials">
         
-        <a href="https://facebook.com/gerson.yance"><FaFacebookF/></a>
-        <a href="https://instagram.com/gersonyance"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://facebook.com/gerson.yance" target="_blank" rel="noopener noreferrer"><FaFacebookF/></a>
+        <a href="https://instagram.com/gersonyance" target="_blank" rel="noopener noreferrer"><FiInstagram/></a>
+        <a href="https://twitter.com" target="_blank" rel="noreferrer"><IoLogoTwitter/></a>
+        <a href="https://wa.link/096lxa" target="_blank" rel="noreferrer"><BsWhatsapp/></a>
       </div>
 
       <div className="footer__copyright">

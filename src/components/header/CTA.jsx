@@ -5,7 +5,7 @@ import useMediaQuery from './useMediaQuery'
 
 const CTA = () => {
 
-  const matches = useMediaQuery('(max-width: 600px)')
+  const matches = useMediaQuery('(max-width: 900px)')
 
   return (
     <div className="cta">

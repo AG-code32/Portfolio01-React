@@ -1,5 +1,5 @@
 #experience {
-  height: 100vh;
+  height: 80vh;
   padding-top: 2rem;
 }
 .experience__container {
@@ -59,6 +59,13 @@
     }
     .experience__content {
         padding: 1rem;
+    }
+}
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    #experience {
+        height: auto;
     }
 }
 

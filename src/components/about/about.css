@@ -1,8 +1,11 @@
 #about {
-  height: 100vh;
+  height: 80vh;
 }
 #about > h5 {
-  padding-top: 2rem;
+  padding-top: 3rem;
+}
+#about > h2 {
+  margin-bottom: 1rem;
 }
 
 .about__container {
@@ -50,7 +53,7 @@
 .about__content {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: center;
   /* height: 20rem; */
   gap: 3rem;
 }
@@ -146,6 +149,71 @@
   .about__card {
     padding: 2rem;
     }
+}
+
+
+/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  #about {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  #about > h5 {
+    padding-top: 1rem;
+  }
+  #about > h2 {
+    margin-bottom: 1rem;
+  }
+  .about__container {
+    display: flex;
+    margin: 0;
+    gap: 0;
+  }
+  .about__content {
+    padding: 0rem 0rem 0rem;
+    align-items: start;
+    gap: 1.5rem;
+  }
+  .about__content > p {
+    font-size: .8rem;
+    line-height: 1.4;
+  }
+  .about__cards {
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 0rem;
+  }
+  .about__card {
+    width: 95%;
+    /* width: 6.5rem; */
+    /* gap: auto; */
+    padding: .5rem .5rem;
+  }
+  .about__container-me {
+    justify-content: start;
+  }
+  .about__me {
+    width: 80%;
+    /* margin: 0rem auto 0rem; */
+  }
+  .about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(0deg);
+    /* transition: var(--transition); */
+  }
+  .about__icon {
+
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .about__card h5 {
+    font-size: 0.8rem;
+  }
+  .about__card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+  }
 }
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */

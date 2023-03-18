@@ -1,3 +1,7 @@
+#portfolio {
+    /* height: 90vh; */
+    padding-top: 2rem;
+  }
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

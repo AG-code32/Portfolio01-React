@@ -115,27 +115,6 @@ header {
 }
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
-@media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-    padding-top: 5rem;
-  }
-  .header__container-name {
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  .header__socials, .scroll__down {
-    display: none;
-  }
-  .cta {
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5.5rem;
-  }
-}
-/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 800px) and (orientation: landscape) {
   header {
     height: 100vh;
@@ -170,25 +149,33 @@ header {
 
 
 
+/* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+  header {
+    height: 91.2vh;
+    padding-top: 5rem;
+  }
+  .header__container-name {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .header__socials, .scroll__down {
+    display: none;
+  }
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+}
+
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (min-height: 800px) {
   header {
     height: 100vh;
     padding-top: 9rem;
-  }
-  .header__container-name {
-    /* font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.2; */
-  }
-  .header__socials, .scroll__down {
-    /* display: none; */
-  }
-  .cta {
-    /* flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5.5rem; */
   }
 }

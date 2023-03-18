@@ -69,12 +69,23 @@ input, textarea {
   }
 }
 
+/* ================== MEDIA QUERIES ============= */
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  #contact {
+      height: auto;
+  }
+}
+
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 650px) {
   #contact {
     height: auto;
+    margin-bottom: 2rem;
   }
   .container.contact__container {
     width: var(--container-width-sm);
+  }
+  form {
+    display: none;
   }
 }
