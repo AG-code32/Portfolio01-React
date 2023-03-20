@@ -4,20 +4,20 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_mgjxp39', 'template_9pr9ijv', form.current, 'PW5t104hvrnZoQOEc')
+  //   emailjs.sendForm('service_mgjxp39', 'template_9pr9ijv', form.current, 'PW5t104hvrnZoQOEc')
 
-    e.target.reset();
+  //   e.target.reset();
 
-  };
+  // };
   
   return (
     <section id='contact'>

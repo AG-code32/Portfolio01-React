@@ -5,18 +5,9 @@ import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import useMediaQuery from './useMediaQuery'
-import { useState } from 'react';
-
 
 const Header = () => {
   
-  const [scrollTop, setScrollTop] = useState(0);
-
-  const handleScroll = (event) => {
-    setScrollTop(event.currentTarget.scrollTop);
-  };
-
-
   const matches = useMediaQuery('(max-width: 800px) and (orientation: landscape)')
 
   const [text] = useTypewriter ({
@@ -27,50 +18,6 @@ const Header = () => {
 
   return (
   <header id='home'>
-    {/* <div>
-      <div className='scroll'>
-        Scroll top: <b>{scrollTop}</b>
-      </div>
-      <div
-          style={{
-            border: '1px solid black',
-            width: '400px',
-            height: '200px',
-            overflow: 'auto',
-          }}
-         onScroll={handleScroll}>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-          <p>Hola Mundo</p>
-        </div> */}
-
-    {/* <div>
-      Scroll top: <b>{scrollTop}</b>
-      <br />
-      <br />
-      <div
-        style={{
-          border: '1px solid black',
-          width: '400px',
-          height: '200px',
-          overflow: 'auto',
-        }}
-        onScroll={handleScroll}
-      >
-        {[...Array(10)].map((_, i) => (
-          <p key={i}>Content</p>
-        ))}
-      </div>
-    </div> */}
 
     <div className="container header__container">
       <h5>Hello I'm</h5>
