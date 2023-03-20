@@ -4,12 +4,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
 import { BsWhatsapp } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
 
 
 const Footer = () => {
   return (
     <footer>
-      <a href="/" className='footer__logo'>Gerson Yance</a>
+      <a href="#home" className='footer__logo'>Gerson|Yance</a>
 
       <ul className="permalinks">
         <li><a href="#home">Home</a></li>
@@ -30,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Gerson Yance all rights reserved.</small>
+        <small>This project was Built in <FaReact /> and created by &copy; Gerson Yance all rights reserved 2023.</small>
       </div>
 
 

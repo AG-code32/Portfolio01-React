@@ -1,6 +1,6 @@
 #contact {
-  height: 100vh;
-  padding-top: 2rem;
+  height: 65vh;
+  padding-top: 1.7rem;
 }
 
 #contact > h2 {
@@ -8,15 +8,20 @@
 }
 .container.contact__container {
   width: 58%;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  /* display: grid;
   grid-template-columns: 30% 58%;
-  gap: 12%;
+  gap: 12%; */
 }
 
 .contact__options {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  justify-content: space-between;
+  width: 100%;
+  /* flex-direction: row; */
+  /* gap: 2.5rem; */
 }
 
 .contact__option {
@@ -26,6 +31,7 @@
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  width: 15rem;
 }
 
 .contact__option:hover {
@@ -46,7 +52,8 @@
 
 /* =================== FORM ================= */
 form {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   gap: 1.2rem;
 }
@@ -85,7 +92,12 @@ input, textarea {
   .container.contact__container {
     width: var(--container-width-sm);
   }
-  form {
-    display: none;
+  .contact__options {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
+  /* form {
+    display: none;
+  } */
 }

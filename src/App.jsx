@@ -9,12 +9,12 @@ import ResumePage from './pages/ResumePage'
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/resume' element={<ResumePage />}/>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<HomePage />}/>
+            <Route path='/resume' element={<ResumePage />}/>
+          </Routes>
+        </BrowserRouter>
     </>
   );
 }
