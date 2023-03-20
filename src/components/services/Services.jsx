@@ -3,8 +3,6 @@ import './services.css'
 
 import { motion } from 'framer-motion'
 import { useState } from 'react';
-import { getValue } from '@testing-library/user-event/dist/utils';
-
 
 const Services = () => {
 
