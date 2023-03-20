@@ -70,12 +70,11 @@ header {
     gap: 0.8rem;
     position: absolute;
     left: 0;
-    bottom: 1.1rem;
+    bottom: .5rem;
 }
 
 .header__socials > a {
   font-size: 1.3rem;
-  /* width: 2rem; */
 }
 
 .header__socials::after {
@@ -105,31 +104,37 @@ header {
   flex-direction: column;
   position: absolute;
   right: -2.3rem;
-  bottom: 3rem;
+  bottom: 2.2rem;
 
 }
 .scroll__down > p {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 1.1rem;
-    /* height: 20rem; */
-
 }
 .element {
   position: relative;
-  left: 2.8rem;
-  top: 4rem;
   width: 0; 
   height: 3rem; 
   /* background-color: red; */
   animation: 
-  nudge 1s linear infinite alternate,
+  nudge 1.5s linear infinite alternate,
   slide-in-blurred-top 1s infinite cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 
   border-top: 10px solid var(--color-primary);
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;   
 }
+.element__left {
+  /* height: 1rem; */
+  left: 0rem;
+  top: 1rem;
+}
+.element__right {
+  left: 2.8rem;
+  top: 4rem;
+}
+
 .scroll__down:hover .element {
   border-top: 10px solid var(--color-light);
   border-left: 5px solid transparent;
@@ -239,8 +244,6 @@ header {
   header {
     height: 100vh;
     padding-top: 9rem;
-  }
-  .cta {
   }
   .cta .btn {
     white-space: nowrap;

@@ -14,7 +14,7 @@ const CTA = () => {
         <a href={Curriculum} download className='btn' target="_blank" rel="noreferrer">
           <p>Download CV </p>
           <BiDownload />
-          </a> 
+        </a> 
         : 
         <a href='/resume' className='btn'>
           <p>Download CV </p>

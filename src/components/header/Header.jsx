@@ -41,7 +41,7 @@ const Header = () => {
       {/* </div> */}
       <a href="#contact" className='scroll__down'>
         <p>Scroll Down</p>
-        <div className='element'></div>
+        <div className='element element__right'></div>
       </a>
       <CTA />
 

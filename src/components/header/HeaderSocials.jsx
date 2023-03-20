@@ -11,6 +11,7 @@ const HeaderSocials = () => {
         <a href="https://linkedin.com/in/gerson-yance-patricio" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
         <a href="https://github.com/AG-code32" target="_blank" rel="noreferrer"><FaGithub /></a>
         <a href="https://wa.link/096lxa" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+        {/* <div className='element element__left'></div> */}
     </div>
   )
 }
