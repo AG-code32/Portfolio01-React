@@ -1,6 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/webpage1-general-3.png'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
@@ -65,7 +65,9 @@ const Portfolio = () => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
-                  <img src={image} alt={tittle} />
+                  <a href="#">
+                    <img src={image} alt={tittle} />
+                  </a>
                   <h3>{tittle}</h3>
                 </div>
                 <div className="portfolio__item-cta">

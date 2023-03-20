@@ -1,62 +1,79 @@
 #portfolio {
-    /* height: 90vh; */
-    padding-top: 2rem;
-  }
+  /* height: 90vh; */
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-    gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  gap: 2.5rem;
 }
 
 .portfolio__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  border-color: var(--color-primary-variant);
+  background: transparent;
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+  /* height: 25rem; */
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.portfolio__item-image > img {
+  /* background: var(--color-primary-variant); */
+  height:12rem;
+  width: 20rem;
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
-    /* text-align: center; */
+  margin: 1.2rem 0 2rem;
+  /* text-align: center; */
 }
 
 .portfolio__item-cta {
-    display: flex;
-    justify-content: space-evenly; /**/
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly; /**/
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 }
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 690px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  #portfolio {
+    /* padding: 1rem 1rem; */
+  /* width: 95%; */
+  margin-top: 2rem;
+  }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    /* width: 50vw; */
+    gap: 1rem;
+  }
+  .portfolio__item {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 

@@ -1,8 +1,9 @@
 #about {
   height: 80vh;
 }
+
 #about > h5 {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 #about > h2 {
   margin-bottom: 1rem;
@@ -221,6 +222,9 @@
   #about {
     height: auto;
     margin: 0;
+  }
+  #about > h5 {
+    padding-top: 2rem;
   }
   .about__container-me {
     /* gap: 1rem; */

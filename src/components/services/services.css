@@ -1,79 +1,108 @@
 #services {
-    height: 90vh;
-    padding-top: 2rem;
-  }
+  min-height: 90vh;
+  margin-top: 2rem;
+  padding-top: 6rem;
+}
 #services > h2 {
-    margin-bottom: 1.5rem;
-  }
-  
+  margin-bottom: 1.5rem;
+}
+
 .services__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 4rem;
+  padding: 4rem 0 0;
+  height: auto;
+  /* margin-bottom: 1rem; */
 }
 
 .service {
-    background: var(--color-bg-variant);
-    border-radius: 2rem 2rem 2rem 2rem;
-    border: 1px solid var(--color-primary);
-    height: auto;
-    transition: var(--transition);
+  /* background: var(--color-bg-variant); */
+  border-radius: 2rem 2rem 2rem 2rem;
+  /* border: 1px solid var(--color-primary); */
+  height: auto;
+  /* transition: var(--transition); */
 }
 
-.service:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
+/* .service:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+} */
 
 /* .service:hover .service__list {
-  display: flex;
+display: flex;
 } */
 
 .service__head {
-    background: var(--color-primary);
-    padding: 1.5rem;
-    border-radius: 2rem 2rem 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  background: var(--color-primary);
+  padding: 1.5rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
+/* .service__head:hover {
+  background: transparent;
+  outline: .5px solid var(--color-primary);
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+.service__head:hover > h3{
+  color: white;
+} */
 
 .service__head h3 {
-    color: var(--color-bg);
-    font-size: 1rem;
-    text-align: center;
+  color: var(--color-bg);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .service__list {
-    padding: 1.5rem 2rem 1rem;
-    /* display: none; */
-    /* opacity: 0; */
+  /* background: var(--color-bg-variant); */
+  padding: 1rem 2rem 1rem;
+  /* display: none; */
+  /* opacity: 0; */
 }
 
 .service__list li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .service__list-icon {
-    color: var(--color-primary);
-    margin-top: 2px;
+  color: var(--color-primary);
+  margin-top: 2px;
 }
 
 .service__list p {
-    font-size: 0.9rem;
+  /* color: var(--color-light); */
+  font-size: 0.8rem;
 }
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (min-width: 1025px) {
+  /* .service__head:hover {
+      background: transparent;
+      outline: .5px solid var(--color-primary);
+      transition: background .3s ease;
+      cursor: pointer;
+  }
+  .service__head:hover > h3{
+      color: white;
+  } */
+}
+/* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {
-    .services__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    .service {
-        height: auto;
-    }
+  .services__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+  }
+  .service {
+      height: auto;
+  }
 }
 
 /* ================== MEDIA QUERIES ============= */
@@ -85,17 +114,25 @@
 
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 690px) {
-    .services__container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+  #services {
+    padding-top: 2rem;
+  }
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0 0;
+  }
+  .service__head h3 {
+    /* color: var(--color-bg); */
+    font-size: .9rem;
+  }
 }
 @media screen and (max-width: 600px) {
-    #services {
-        height: auto;
-      }
-    .services__container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+  #services {
+    height: auto;
+  }
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
