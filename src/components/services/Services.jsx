@@ -29,7 +29,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen0(!isOpen0)}
             className='service__head'>
-            <motion.h3 layout='position'>UI/UX Design</motion.h3>
+            <motion.h3 layout='position'>UI/UX Design ...</motion.h3>
             {isOpen0 && (
               <motion.div className='service__list'>
                 <p>We transform your static designs into stunning websites and web applications, optimized to be responsive, accessible and high quality.</p>
@@ -44,7 +44,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen1(!isOpen1)}
             className='service__head'>
-            <motion.h3 layout='position'>Web Development</motion.h3>
+            <motion.h3 layout='position'>Web Development ...</motion.h3>
             {isOpen1 && (
               <motion.div className='service__list'>
                 <p>Specialized in the development of web sites and applications, providing a comprehensive service from the beginning to the end of a project.</p>
@@ -59,7 +59,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen2(!isOpen2)}
             className='service__head'>
-            <motion.h3 layout='position'>Analisys of Requirements</motion.h3>
+            <motion.h3 layout='position'>Analisys of Requirements ...</motion.h3>
             {isOpen2 && (
               <motion.div className='service__list'>
                 <p>Collect and understand all user requirements, in order to identify their needs and develop solutions.</p>
@@ -74,7 +74,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen3(!isOpen3)}
             className='service__head'>
-            <motion.h3 layout='position'>WPO</motion.h3>
+            <motion.h3 layout='position'>WPO ...</motion.h3>
             {isOpen3 && (
               <motion.div className='service__list'>
                 <p>Optimize the performance of web sites and applications to optimize their loading time and improve their response. Guaranteed user experience.</p>
@@ -89,7 +89,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen4(!isOpen4)}
             className='service__head'>
-            <motion.h3 layout='position'>SEO</motion.h3>
+            <motion.h3 layout='position'>SEO ...</motion.h3>
             {isOpen4 && (
               <motion.div className='service__list'>
                 <p>Optimize your web sites and applications to improve their position in search engines.</p>
@@ -104,7 +104,7 @@ const Services = () => {
             layout
             onClick={() => setIsOpen5(!isOpen5)}
             className='service__head'>
-            <motion.h3 layout='position'>Web Hosting</motion.h3>
+            <motion.h3 layout='position'>Web Hosting ...</motion.h3>
             {isOpen5 && (
               <motion.div className='service__list'>
                 <p>Don't have a domain and web hosting for your project?<br />No problem, we can also assist and solve all your doubts.</p>

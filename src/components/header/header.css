@@ -226,7 +226,7 @@ header {
 /* ================== MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
   header {
-    height: 91.2vh;
+    height: 100vh;
     padding-top: 5rem;
   }
   .header__container-name {
@@ -241,7 +241,7 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
@@ -253,7 +253,7 @@ header {
     padding-top: 9rem;
   }
   .cta .btn {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: flex;
     /* flex-direction: row; */
   }

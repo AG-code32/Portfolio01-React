@@ -6,19 +6,33 @@ import { RiServiceLine } from "react-icons/ri";
 
 import { useState } from "react";
 
+import useMediaQuery from '../header/useMediaQuery'
 
 const Nav = () => {
+
+  const matches = useMediaQuery('(max-width: 600px)')
+
   const [activeNav, setActiveNav] = useState('#')
   
   
   const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 3800) {
-      setNavbar(true)
-    }
-    else {
-      setNavbar(false)
+    // console.log(window.scrollY)
+    
+    if (matches) {
+      if (window.scrollY >= 6702) {
+        setNavbar(true)
+      }
+      else {
+        setNavbar(false)
+      }
+    } else {
+      if (window.scrollY >= 3800) {
+        setNavbar(true)
+      }
+      else {
+        setNavbar(false)
+      }
     }
   }
 

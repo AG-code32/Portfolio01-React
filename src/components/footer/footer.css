@@ -49,14 +49,54 @@ footer a {
 }
 
 .footer__copyright {
-  /* margin-bottom: 4.5rem; */
-  margin-bottom: 0rem;
+  padding: 1rem 0 .5rem;
   color: var(--color-bg);
   line-height: 1.2;
 }
-.footer__copyright > small{
-  /* line-height: .6; */
+
+.footer__arrow {
+  position: fixed;
+  right: 2rem;
+  /* display: none; */
+  transition: none;
+  /* transition: transform .6s ease; */
+  /* transform: translateY(-8rem); */
+  /* transition: transform 1s ease; */
+  /* transition: .4s; */
 }
+.arrow__up {
+  bottom: 8rem;
+  opacity: 0;
+  transition: opacity .4s ease-in-out, transform .6s ease-in-out;
+}
+.arrow__down {
+  bottom: 5rem;
+  opacity: 0;
+  transition: opacity .4s ease-in-out, transform .6s ease-in-out;
+}
+
+.footer__arrow > svg {
+
+  background: var(--color-bg);
+  color: white;
+  border-radius: 0.7rem;
+  padding: .5rem;
+
+  font-size: 3rem;
+  border: 1px solid transparent;
+  /* transition: all .2s ease-in-out; */
+
+  /* border-radius: .4rem; */
+}
+.footer__arrow > svg:hover {
+  box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.3), 0px 0px 7px rgb(0, 0, 0, 0.3);
+  /* background: transparent; */
+  /* color: var(--color-primary-variant); */
+  /* border-color: var(--color-white); */
+  border-color: rgb(255, 255, 255, 0.5);
+}
+
+
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {
@@ -77,6 +117,17 @@ footer a {
     gap: 1.5rem;
   }
   .footer__socials {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0;
+  }
+  .footer__arrow {
+    position: fixed;
+    right: .5rem;
+    /* transition: .4s; */
+  }
+  .arrow__up {
+    bottom: 8rem;
+  }
+  .arrow__down {
+    bottom: 8rem;
   }
 }
