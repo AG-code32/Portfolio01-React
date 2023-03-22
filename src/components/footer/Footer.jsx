@@ -13,10 +13,11 @@ import { useState } from "react";
 import useMediaQuery from '../header/useMediaQuery'
 
 
-
 const Footer = (resumeFooterProps) => {
 
   const query600p = useMediaQuery('(max-width: 600px)')
+
+  const [changeState, setChangeState] = useState('#')
 
   const [arrowUp, setArrowUp] = useState(false)
   const [arrowDown, setArrowDown] = useState(false)
@@ -78,16 +79,16 @@ const Footer = (resumeFooterProps) => {
 
   return (
     <footer>
-      <a href="#home" className='footer__logo'>Gerson|Yance</a>
+      <a href={changeState} onClick={()=>setChangeState('#')} className='footer__logo'>Gerson|Yance</a>
 
       <ul className="permalinks">
-        <li><a href='#'>Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#')}>Home</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#about')}>About</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#experience')}>Experience</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#services')}>Services</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#portfolio')}>Portfolio</a></li>
         {/* <li><a href="#testimonials">Testimonials</a></li> */}
-        <li><a href="#contact">Contact</a></li>
+        <li><a href={changeState} onClick={()=>setChangeState('#contact')}>Contact</a></li>
       </ul>
       
       <div className="footer__socials">
@@ -109,13 +110,15 @@ const Footer = (resumeFooterProps) => {
       </div>
 
       <a 
-        href='#'
+        href={changeState}
+        onClick={()=>setChangeState('#')}
         className='footer__arrow arrow__up show__arrow'
         style={style__footerArrowUp}>
         <BsArrowUp />
       </a>
       <a 
-        href="#contact"
+        href={changeState}
+        onClick={()=>setChangeState('#contact')}
         className='footer__arrow arrow__down show__arrow'
         style={style__footerArrowDown}>
         <BsArrowDown />
