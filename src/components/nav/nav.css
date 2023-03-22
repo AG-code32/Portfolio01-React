@@ -18,9 +18,6 @@ nav {
 
 .navbar.navActive {
     transform: translate(-50%,6rem);
-    /* opacity: 0; */
-    /* z-index: 0; */
-    /* display: none; */
 }
 
 nav a {

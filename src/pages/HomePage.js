@@ -14,14 +14,14 @@ function HomePage() {
   return (
     <>
       <Header />
-      <Nav />
+      <Nav displayResume={true} navScrollY={3800} gapResume={false}/>
       <About />
       <Experiences />
       <Services />
       <Portfolio />
       {/* <Testimonials /> */}
       <Contact />
-      <Footer />
+      <Footer arrowUp={false} arrowDown={true}/>
     </>
   )
 }

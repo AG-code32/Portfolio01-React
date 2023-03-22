@@ -14,7 +14,7 @@ import useMediaQuery from '../header/useMediaQuery'
 
 
 
-const Footer = () => {
+const Footer = (resumeFooterProps) => {
 
   const query600p = useMediaQuery('(max-width: 600px)')
 
@@ -45,8 +45,10 @@ const Footer = () => {
       }
     } else {
       if (window.scrollY >= 580) {
-        setArrowUp(false)
-        setArrowDown(true)
+        // setArrowUp(false)
+        // setArrowDown(true)
+        setArrowUp(resumeFooterProps.arrowUp)
+        setArrowDown(resumeFooterProps.arrowDown)
         if (window.scrollY >= 3300) {
           setArrowUp(false)
           setArrowDown(false)
@@ -62,7 +64,6 @@ const Footer = () => {
       }
     }
   }
-
   
   const style__footerArrowUp = {
     transform: arrowUp ? 'translateY(-1rem)' : 'translateY(12rem)',
@@ -80,7 +81,7 @@ const Footer = () => {
       <a href="#home" className='footer__logo'>Gerson|Yance</a>
 
       <ul className="permalinks">
-        <li><a href="#home">Home</a></li>
+        <li><a href='#'>Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#services">Services</a></li>
@@ -108,7 +109,7 @@ const Footer = () => {
       </div>
 
       <a 
-        href="#home"
+        href='#'
         className='footer__arrow arrow__up show__arrow'
         style={style__footerArrowUp}>
         <BsArrowUp />

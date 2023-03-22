@@ -3,12 +3,11 @@ import './nav.css'
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
-
 import { useState } from "react";
-
 import useMediaQuery from '../header/useMediaQuery'
 
-const Nav = () => {
+
+const Nav = (resumeNavProps) => {
 
   const matches = useMediaQuery('(max-width: 600px)')
 
@@ -19,6 +18,7 @@ const Nav = () => {
   const changeBackground = () => {
     // console.log(window.scrollY)
     
+    
     if (matches) {
       if (window.scrollY >= 6702) {
         setNavbar(true)
@@ -27,7 +27,7 @@ const Nav = () => {
         setNavbar(false)
       }
     } else {
-      if (window.scrollY >= 3800) {
+      if (window.scrollY >= resumeNavProps.navScrollY) {
         setNavbar(true)
       }
       else {
@@ -37,16 +37,26 @@ const Nav = () => {
   }
 
   window.addEventListener('scroll', changeBackground)
+  
+  // console.log(resumeNavProps.gapResume)
 
+  const specialStyle = {
+    display: resumeNavProps.displayResume ? 'flex' : 'none',
+  }
+  const navStyle = {
+    gap: resumeNavProps.gapResume,
+  }
+
+  
   return (
-    <nav className={navbar ? 'navbar navActive' : 'navbar' }>
+    <nav className={navbar ? 'navbar navActive' : 'navbar' } style={navStyle}>
       
       <div>
         <a href={activeNav} onClick={()=>setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
         <h3>Home</h3>
       </div>
       
-      <div>
+      <div style={specialStyle}>
         <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
         <h3>About</h3>
       </div>
@@ -56,12 +66,12 @@ const Nav = () => {
         <h3>Experience</h3>
       </div> */}
       
-      <div>
+      <div style={specialStyle}>
         <a href="#services" onClick={()=>setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine /></a>
         <h3>Services</h3>
       </div>
       
-      <div>
+      <div style={specialStyle}>
         <a href="#portfolio" onClick={()=>setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BiBook /></a>
         <h3>Portfolio</h3>
       </div>

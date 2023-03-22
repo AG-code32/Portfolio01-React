@@ -13,9 +13,9 @@ function ResumePage() {
     <>
 
       <Resume />
-      <Nav />
+      <Nav displayResume={false} navScrollY={500} gapResume='1.8rem'/>
       <Contact />
-      <Footer />
+      <Footer arrowUp={true} arrowDown={false}/>
     </>
   )
 }
