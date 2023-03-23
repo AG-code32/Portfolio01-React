@@ -18,7 +18,6 @@ const Nav = (resumeNavProps) => {
   const changeBackground = () => {
     // console.log(window.scrollY)
     
-    
     if (matches) {
       if (window.scrollY >= 6702) {
         setNavbar(true)
@@ -41,7 +40,7 @@ const Nav = (resumeNavProps) => {
   // console.log(resumeNavProps.gapResume)
 
   const specialStyle = {
-    display: resumeNavProps.displayResume ? 'flex' : 'none',
+    display: resumeNavProps.displayResume ? 'block' : 'none',
   }
   const navStyle = {
     gap: resumeNavProps.gapResume,

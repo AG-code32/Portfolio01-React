@@ -10,9 +10,13 @@ import Portfolio from '../components/portfolio/Portfolio'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 
+import ScrollToTop from '../components/scrollToTop/ScrollToTop';
+
+
 function HomePage() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Nav displayResume={true} navScrollY={3800} gapResume={false}/>
       <About />

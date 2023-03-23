@@ -40,7 +40,7 @@ nav a.active {
 
 /* texto flotante */
 
-nav div h3 {
+nav > div > h3 {
     color: var(--color-light);
     position: absolute;
     background: rgba(0, 0, 0, 0.236);
@@ -54,20 +54,23 @@ nav div h3 {
 
 
 @media screen and (min-width: 1024px) {
-    nav div h3 {
+    nav > div > h3 {
         display: block;
     }
     
-    nav div:nth-child(-n+2) h3{
+    nav > div:nth-child(1) > h3{
         transform: translate(4px, -40px);
     }
-    nav div:nth-child(3) h3 {
+    nav > div:nth-child(2) > h3{
+        transform: translate(4px, -40px);
+    }
+    nav > div:nth-child(3) > h3 {
         transform: translate(-10px, -40px);
     }
-    nav div:nth-child(4) h3 {
+    nav > div:nth-child(4) > h3 {
         transform: translate(-4px, -40px);
     }
-    nav div:nth-child(5) h3 {
+    nav > div:nth-child(5) > h3 {
         transform: translate(-2px, -40px);
     }
    

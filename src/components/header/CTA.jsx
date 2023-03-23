@@ -2,6 +2,7 @@ import React from 'react'
 import Curriculum from '../../assets/GersonYance-CV-dev.pdf'
 import useMediaQuery from './useMediaQuery'
 import { BiDownload } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 
 const CTA = () => {
@@ -16,10 +17,10 @@ const CTA = () => {
           <BiDownload />
         </a> 
         : 
-        <a href='/resume' className='btn'>
+        <Link to='/resume' className='btn'>
           <p>Download CV </p>
           <BiDownload />
-          </a> 
+          </Link> 
         
         // <a href='/resume' className='btn'>Download CV</a>
         }

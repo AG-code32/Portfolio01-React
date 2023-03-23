@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import { Link } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
@@ -17,7 +18,7 @@ const Footer = (resumeFooterProps) => {
 
   const query600p = useMediaQuery('(max-width: 600px)')
 
-  const [changeState, setChangeState] = useState('#')
+  const [changeState, setChangeState] = useState('/')
 
   const [arrowUp, setArrowUp] = useState(false)
   const [arrowDown, setArrowDown] = useState(false)
@@ -79,16 +80,54 @@ const Footer = (resumeFooterProps) => {
 
   return (
     <footer>
-      <a href={changeState} onClick={()=>setChangeState('#')} className='footer__logo'>Gerson|Yance</a>
+
+      {resumeFooterProps.pageResume ? 
+          <Link to={changeState} preventScrollReset={false} onClick={()=>setChangeState('/')} className='footer__logo'>{'GERSON YANCE'}</Link>
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#')} className='footer__logo'>{'GERSON YANCE'}</a> }
 
       <ul className="permalinks">
-        <li><a href={changeState} onClick={()=>setChangeState('#')}>Home</a></li>
-        <li><a href={changeState} onClick={()=>setChangeState('#about')}>About</a></li>
-        <li><a href={changeState} onClick={()=>setChangeState('#experience')}>Experience</a></li>
-        <li><a href={changeState} onClick={()=>setChangeState('#services')}>Services</a></li>
-        <li><a href={changeState} onClick={()=>setChangeState('#portfolio')}>Portfolio</a></li>
-        {/* <li><a href="#testimonials">Testimonials</a></li> */}
-        <li><a href={changeState} onClick={()=>setChangeState('#contact')}>Contact</a></li>
+        <li>
+          {resumeFooterProps.pageResume ? 
+          <Link to={changeState} onClick={()=>setChangeState('/')}>Home</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#')}>Home</a> }
+        </li>
+
+        <li>
+        {resumeFooterProps.pageResume ? 
+          <Link to='/#'>About</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#about')}>About</a> }
+          </li>
+
+        <li>
+          {resumeFooterProps.pageResume ? 
+          <Link to='/#experience' onClick={()=>setChangeState('/#experience')}>Experience</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#experience')}>Experience</a>}
+        </li>
+
+        <li>
+          {resumeFooterProps.pageResume ? 
+          <Link to='/#services' onClick={()=>setChangeState('/#services')}>Services</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#services')}>Services</a>}
+        </li>
+
+        <li>
+          {resumeFooterProps.pageResume ? 
+          <Link to='/#portfolio' onClick={()=>setChangeState('/#portfolio')}>Portfolio</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#portfolio')}>Portfolio</a>}
+        </li>
+        
+        <li>
+        {resumeFooterProps.pageResume ? 
+          <Link to='/#contact' onClick={()=>setChangeState('/#contact')}>Contact</Link> 
+          : 
+          <a href={changeState} onClick={()=>setChangeState('#contact')}>Contact</a>}
+        </li>
       </ul>
       
       <div className="footer__socials">
