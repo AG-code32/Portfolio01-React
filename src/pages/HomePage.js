@@ -9,6 +9,7 @@ import Portfolio from '../components/portfolio/Portfolio'
 // import Testimonials from '../components/testimonials/Testimonials'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
+import Logo from '../components/logo/Logo'
 
 import ScrollToTop from '../components/scrollToTop/ScrollToTop';
 
@@ -17,6 +18,7 @@ function HomePage() {
   return (
     <>
       <ScrollToTop />
+      <Logo />
       <Header />
       <Nav displayResume={true} navScrollY={3800} gapResume={false}/>
       <About />

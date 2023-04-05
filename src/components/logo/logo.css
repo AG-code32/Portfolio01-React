@@ -1,0 +1,24 @@
+.logoGY {
+  position: fixed;
+  width: 4.4rem;
+  left: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+  transition: scale .4s ease ;
+  -webkit-transition: scale .4s ease ;
+  -moz-transition: scale .4s ease ;
+  -ms-transition: scale .4s ease ;
+  -o-transition: scale .4s ease ;
+}
+
+.logoGY:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 600px) {
+  .logoGY {
+    position: absolute;
+    width: 3.4rem;
+  }
+}
+
