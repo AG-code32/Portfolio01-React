@@ -1,6 +1,6 @@
 import React from 'react'
 import './resume.css'
-import CV from '../../assets/GY-Dev_ver02.pdf'
+import CV from '../../assets/CV-MobileKOT_ver01.pdf'
 
 
 const Resume = () => {
